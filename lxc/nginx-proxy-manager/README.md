@@ -47,6 +47,8 @@ If you are not using proxmox or want to install this on a existing Alpine box, y
 wget --no-cache -qO - https://raw.githubusercontent.com/ej52/proxmox/main/lxc/nginx-proxy-manager/setup.sh | sh
 ```
 
+sed -i 's/^pid/#pid/' /etc/openresty/nginx.conf
+
 ## Thanks
 
 - [whiskerz007](https://github.com/whiskerz007?tab=repositories)
